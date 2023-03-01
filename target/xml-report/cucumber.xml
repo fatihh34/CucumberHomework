@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="2.635" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="kullanici" name="TC01_BlueRentalCar - tablo - Example #1.1" time="2.443">
+<failure/>
+<system-out><![CDATA[
+Given user "https://www.bluerentalcars.com/" gider..........................passed
+When kullanici login sayfasina gider........................................passed
+And user emali "sam.walker@bluerentalcars.com" girer........................undefined
+And user "c!fas_art" girer..................................................skipped
+And login butonuna basar....................................................skipped
+Then login islemi gerceklesir...............................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
