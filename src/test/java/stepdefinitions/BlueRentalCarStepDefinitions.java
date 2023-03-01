@@ -3,8 +3,11 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Keys;
 import pages.BlueRentalCarPage;
 import utulities.Driver;
+
+import java.security.Key;
 
 public class BlueRentalCarStepDefinitions {
     BlueRentalCarPage blueRentalCarPage = new BlueRentalCarPage();
@@ -15,18 +18,26 @@ public class BlueRentalCarStepDefinitions {
     }
     @When("kullanici login sayfasina gider")
     public void kullanici_login_sayfasina_gider() {
+       blueRentalCarPage = new BlueRentalCarPage();
+        blueRentalCarPage.loginButton.click();
+    }
+    @When("user emali {string} girer")
+    public void user_emali_girer(String string) {
+        blueRentalCarPage= new BlueRentalCarPage();
+        blueRentalCarPage.email.sendKeys(string);
+        //Driver.waitAndSendText(blueRentalCarPage.email,string,10);
 
     }
-    @When("kullanici adini girer")
-    public void kullanici_adini_girer() {
+    @When("user {string} girer")
+    public void user_girer(String string) {
+       // blueRentalCarPage= new BlueRentalCarPage();
+        blueRentalCarPage.password.sendKeys(string);
 
-    }
-    @When("kullanici sifreyi girer")
-    public void kullanici_sifreyi_girer() {
-        // Write code here tha
     }
     @When("login butonuna basar")
     public void login_butonuna_basar() {
+        //blueRentalCarPage= new BlueRentalCarPage();
+        blueRentalCarPage.loginButton2.click();
 
     }
     @Then("login islemi gerceklesir")

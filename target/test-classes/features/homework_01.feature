@@ -14,6 +14,7 @@
     Then login islemi gerceklesir
 
       Examples: tablo
+
       |email                        | password  |
       |sam.walker@bluerentalcars.com| c!fas_art |
 
