@@ -22,4 +22,13 @@ public class BlueRentalCarPage {
     @FindBy(xpath = "//*[@class='btn btn-primary']")
     public WebElement loginButton2;
 
+    @FindBy(xpath = "//*[@id='dropdown-basic-button']")
+    public WebElement loginAssert;
+
+    @FindBy(xpath = "(//*[@class='dropdown-item'])[3]")
+    public WebElement logoutButton;
+
+    @FindBy(xpath = "//*[@class='ajs-button ajs-ok']")
+    public WebElement okButton;
+
 }

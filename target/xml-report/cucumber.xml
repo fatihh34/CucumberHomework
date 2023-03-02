@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="5.844" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="kullanici" name="TC01_BlueRentalCar - tablo - Example #1.1" time="5.466">
+<testsuite name="Cucumber" time="58.999" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="kullanici" name="TC01_BlueRentalCar - tablo - Example #1.1" time="17.648">
 <system-out><![CDATA[
 Given user "https://www.bluerentalcars.com/" gider..........................passed
 When kullanici login sayfasina gider........................................passed
@@ -8,6 +8,40 @@ And user emali "sam.walker@bluerentalcars.com" girer........................pass
 And user "c!fas_art" girer..................................................passed
 And login butonuna basar....................................................passed
 Then login islemi gerceklesir...............................................passed
+Then user logout olur.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="kullanici" name="TC01_BlueRentalCar - tablo - Example #1.2" time="13.685">
+<system-out><![CDATA[
+Given user "https://www.bluerentalcars.com/" gider..........................passed
+When kullanici login sayfasina gider........................................passed
+And user emali "kate.brown@bluerentalcars.com" girer........................passed
+And user "tad1$Fas" girer...................................................passed
+And login butonuna basar....................................................passed
+Then login islemi gerceklesir...............................................passed
+Then user logout olur.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="kullanici" name="TC01_BlueRentalCar - tablo - Example #1.3" time="13.464">
+<system-out><![CDATA[
+Given user "https://www.bluerentalcars.com/" gider..........................passed
+When kullanici login sayfasina gider........................................passed
+And user emali "raj.khan@bluerentalcars.com" girer..........................passed
+And user "v7Hg_va^" girer...................................................passed
+And login butonuna basar....................................................passed
+Then login islemi gerceklesir...............................................passed
+Then user logout olur.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="kullanici" name="TC01_BlueRentalCar - tablo - Example #1.4" time="13.928">
+<system-out><![CDATA[
+Given user "https://www.bluerentalcars.com/" gider..........................passed
+When kullanici login sayfasina gider........................................passed
+And user emali "pam.raymond@bluerentalcars.com" girer.......................passed
+And user "Nga^g6!" girer....................................................passed
+And login butonuna basar....................................................passed
+Then login islemi gerceklesir...............................................passed
+Then user logout olur.......................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
